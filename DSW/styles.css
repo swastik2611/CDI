@@ -1,0 +1,102 @@
+.bodyclass{
+  text-align: center;
+  margin: 50px 0 0 0;
+  background-color: #D8E9A8;
+}
+.navbar{
+  margin: 0 10%;
+  border-radius: 30px;
+  padding: 10px 4px;
+  background-color:#E1578A;
+}
+.btn{
+  padding: 6px 10px;
+  margin: 0 30px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.thumbnails{
+  margin-top: 40px;
+  padding-top: 30px;
+  background-color:#E8E1D9;
+}
+.hr1{
+  max-width: 90%;
+}
+#Jaisalmer{
+  position: absolute;
+  margin: -50px 0 0 440px;
+}
+#Kasauli{
+  position: absolute;
+  margin: -50px 0 0 770px;
+}
+#Leh-Laddakh{
+  position: absolute;
+  margin: -50px  0 0 1070px;
+}
+#Manali{
+  position: absolute;
+  margin:-50px 0 0 135px;
+}
+#Munnar{
+  position: absolute;
+  margin: -50px 0 0 450px;
+}
+#Mysore{
+  position: absolute;
+  margin: -50px 0 0 770px;
+}
+#Ooty{
+  position: absolute;
+  margin: -50px  0 0 1100px;
+}
+#Sikkim{
+  position: absolute;
+  margin: -50px 0 0 130px;
+}
+#Srinagar{
+  position: absolute;
+  margin: -50px 0 0 450px;
+}
+#Goa{
+  position: absolute;
+  margin: -50px 0 0 780px;
+}
+#Rishikesh{
+  position: absolute;
+  margin: -50px  0 0 1080px;
+}
+.textOverlay{
+  font-weight:bolder;
+  color: #D5D5D5;
+  font-size: 20px;
+  position: absolute;
+  margin: -50px 0 0 145px;
+}
+.textOverlay:hover{
+  opacity: 0.5;
+}
+.photo{
+  border-radius: 10%;
+  margin: 20px 30px 20px 35px;
+}
+.photo:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.footer-container{
+  height: 90px;
+  margin:auto;
+  padding: 10px 0 10px 0;
+  color: #3E065F;
+  background-color: #88E0EF;
+  font-size: 20px;
+}

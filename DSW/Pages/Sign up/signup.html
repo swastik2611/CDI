@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body class="bodyclass">
+    <div class="hbtnd">
+      <a href="../../index.html"><button class="hbtn" type="button" name="button">Home</button></a> 
+    </div>
+    <div class="signupform">
+      <h1>Sign Up</h1>
+      <form class="cform" name="cform1"  action="index.html"  onsubmit="return formValidation()" method="post">
+        <label for="">First Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="inp" type="text" name="cfname" value="" required><span class="sp" id="fsp"></span><br><br>
+        <label for="">Middle Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="cmname" value=""><span class="sp" id="msp"></span><br><br>
+        <label for="">Last Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="inp" type="text" name="clname" value="" required><span class="sp" id="lsp"></span><br><br>
+        <label for="">Contact Number</label>&nbsp;&nbsp;
+        <input class="inp" type="phone" name="cphone" value="+91" required><span class="sp" id="csp"></span><br><br>
+        <label for="">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="inp" type="email" name="cemail" value="" required><span class="sp" id="esp"></span><br><br>
+        <label for="">Create Password</label>&nbsp;&nbsp;&nbsp;
+        <input class="inp" type="password" name="cpass" value="" required><span class="sp" id="psp"></span><br><br>
+        <label for="">Confirm Password</label>
+        <input class="inp" type="password" name="ccpass" value="" required><span class="sp" id="cpsp"></span><br><br>
+        <input class="cbtn" type="submit" name="csubmit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="cbtn" id="b2" type="reset" name="creset" value="Reset">
+      </form>
+    </div>
+    <div class="footer-container">
+      <p><strong>Doyel Agrawal &nbsp; Namit Atreya &nbsp; Niharika Singh &nbsp; Swastik Singh</strong></p>
+      <p>© ChalDeIndia 2021</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="signup.js" charset="utf-8"></script>
+  </body>
+</html>

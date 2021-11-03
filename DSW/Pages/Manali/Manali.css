@@ -1,0 +1,13 @@
+.bodyclass{
+  text-align: center;
+  margin: 50px 0 0 0;
+  background-color: #D8E9A8;
+}
+.footer-container{
+  height: 90px;
+  margin:auto;
+  padding: 10px 0 10px 0;
+  color: #3E065F;
+  background-color: #88E0EF;
+  font-size: 20px;
+}
