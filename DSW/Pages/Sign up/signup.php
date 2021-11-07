@@ -17,7 +17,7 @@ $fname=$_POST["cfname"];
 $mname=$_POST['cmname'];
 $lname=$_POST['clname'];
 $phone=$_POST['cphone'];
-$email=$_POST['email'];
+$email=$_POST['cemail'];
 $pass=$_POST['cpass'];
 $qry="INSERT INTO signup (First_Name,Middle_Name,Last_Name,Contact_Number,Email,Password)
 VALUES('$fname','$mname','$lname','$phone','$email','$pass');";
@@ -25,9 +25,12 @@ echo nl2br("\n");
 if(mysqli_query($con,$qry))
 {
   echo "Inserted";
+  header("Location:../../index.html");
 }
 else {
   echo mysqli_error($con);
   echo "Not Inserted";
 }
+mysqli_close($con);
+exit;
 ?>
