@@ -14,13 +14,11 @@ else {
   echo nl2br("\n");
 }
 $fname=$_POST["cfname"];
-echo strlen($fname);
 $mname=$_POST['cmname'];
 $lname=$_POST['clname'];
 $phone=$_POST['cphone'];
 $email=$_POST['email'];
 $pass=$_POST['cpass'];
-echo "The data is".$fname." this";
 $qry="INSERT INTO signup (First_Name,Middle_Name,Last_Name,Contact_Number,Email,Password)
 VALUES('$fname','$mname','$lname','$phone','$email','$pass');";
 echo nl2br("\n");
