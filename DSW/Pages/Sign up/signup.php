@@ -19,18 +19,28 @@ $lname=$_POST['clname'];
 $phone=$_POST['cphone'];
 $email=$_POST['cemail'];
 $pass=$_POST['cpass'];
-$qry="INSERT INTO signup (First_Name,Middle_Name,Last_Name,Contact_Number,Email,Password)
-VALUES('$fname','$mname','$lname','$phone','$email','$pass');";
-echo nl2br("\n");
-if(mysqli_query($con,$qry))
-{
-  echo "Inserted";
-  header("Location:../../index.html");
-}
-else {
-  echo mysqli_error($con);
-  echo "Not Inserted";
-}
+$qrychk="SELECT * FROM signup WHERE Email='$email';";//query to check for same email id acc
+$result=mysqli_query($con,$qrychk);
+$rowcount=mysqli_num_rows($result);
+if($rowcount!=0){
+  echo "Account already exists!";
+  }
+  else {//if acc doesn't exists already
+    $qry="INSERT INTO signup (First_Name,Middle_Name,Last_Name,Contact_Number,Email,Password)
+    VALUES('$fname','$mname','$lname','$phone','$email','$pass');";
+    echo nl2br("\n");
+    if(mysqli_query($con,$qry))
+    {
+      echo "Inserted";
+      header("Location:../../index.html");
+    }
+    else {
+      echo mysqli_error($con);
+      echo "Not Inserted";
+    }
+
+  }
+
 mysqli_close($con);
 exit;
 ?>

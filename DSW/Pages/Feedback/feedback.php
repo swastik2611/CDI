@@ -13,19 +13,20 @@ else {
   echo "Successfully connected";
   echo nl2br("\n");
 }
-// $fname=$_POST["ffname"];
-// $lname=$_POST["flname"];
-// $email=$_POST["femail"];
-// $number=$_POST["fnumber"];
-// $radio=$_POST["fradio1"];
-// $suggestions=$_POST["ftextarea"];
-// $qry="INSERT INTO Feedback (First_Name,Last_Name,Email,Contact_Number,Overall_Impression,Suggestions)
-// VALUES('fname','lname','email','number','radio','suggestions');";
-// if(mysqli_query($con,$qry))
-// {
-//   echo "Inserted";
-// }
-// else {
-//   echo "NOt Inserted".mysqli_error($con);
-// }
+$fname=$_POST["ffname"];
+$lname=$_POST["flname"];
+$email=$_POST["femail"];
+$number=$_POST["fnumber"];
+$radio=$_POST["fradio1"];
+$suggestions=$_POST["ftextarea"];
+$qry="INSERT INTO Feedback (First_Name,Last_Name,Email,Contact_Number,Overall_Impression,Suggestions)
+VALUES('$fname','$lname','$email','$number','$radio','$suggestions');";
+if(mysqli_query($con,$qry))
+{
+  echo "Inserted";
+  header("Location:../../index.html");
+}
+else {
+  echo "NOt Inserted".mysqli_error($con);
+}
  ?>
