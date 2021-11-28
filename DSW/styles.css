@@ -78,6 +78,37 @@
   position: absolute;
   margin: -4%  0 0 84.5%;
 }
+#Maldives{
+  position: absolute;
+  margin: -4% 0 0 10%;
+}
+#Dubai{
+  position: absolute;
+  margin: -4% 0 0 36%;
+}
+#Singapore{
+  position: absolute;
+  margin: -4% 0 0 59.5%;
+}
+#Thailand{
+  position: absolute;
+  margin: -4%  0 0 85%;
+}
+#Goa-Lakshwadeep{
+  position: absolute;
+  margin: -4% 0 0 12.75%;
+  color: black;
+}
+#SriLanka{
+  position: absolute;
+  margin: -4% 0 0 47.5%;
+  color: black;
+}
+#Diu{
+  position: absolute;
+  margin: -4% 0 0 78%;
+  color: black;
+}
 .textOverlay{
   font-weight:bolder;
   color: #D5D5D5;
@@ -96,9 +127,18 @@
   opacity: 0.8;
   cursor: pointer;
 }
+.package{
+  margin:0;
+  margin bottom: 0;
+  padding: 20px 0;
+  background-color:#F3F0D7;
+}
+.ending{
+  color: #0B4619;
+}
 .footer-container{
   height: 90px;
-  margin:auto;
+  margin:0;
   padding: 10px 0 10px 0;
   color: #3E065F;
   background-color: #88E0EF;

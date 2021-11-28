@@ -21,14 +21,14 @@ if(mysqli_query($con,$qry))
 {
   $rowcount=mysqli_num_rows($result);
   if($rowcount==0){
-    echo "No record Found!";
+    echo "Account does not exists!";
+    echo nl2br("\n");
+    header("Location:signin.html");
     }
   else
   {
     $row = mysqli_fetch_array($result);
 
-      echo $row['First_Name']." " .$row['Middle_Name']." " .$row['Last_Name']." " .$row['Contact_Number']
-      ." " .$row['Email']." " .$row['Password'];
   }
 }
 else {
@@ -38,4 +38,4 @@ mysqli_close($con);
 ?>
 <a href="Login.html?a=<?php echo $row['First_Name']; ?>&b=<?php echo $row['Middle_Name']; ?>
   &c=<?php echo $row['Last_Name']; ?>&d=<?php echo $row['Contact_Number']; ?>
-&e=<?php echo $row['Email']; ?>  ">HI</a>
+&e=<?php echo $row['Email']; ?>  ">Click Here</a>
