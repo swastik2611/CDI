@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Informations</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body class="bodyclass">
+<style >
+.bodyclass{
+  text-align: center;
+}
+.details{
+    margin: 44px 380px;
+    padding: 20px 20px;
+    background-color: #D47AE8;
+    box-shadow: 10px 10px #F4BEEE;
+}
+span{
+  padding: 2px 4px;
+  font-size: 18px;
+  background-color: #FBF6F0;
+  border-radius: 3px;
+}
+</style>
+    <div class="details">
+    <h1>User Information</h1>
+    <span>First Name </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id=fname></span><br><br>
+
+    <span>Middle Name </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id=mname></span><br><br>
+
+    <span>Last Name </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id=lname></span><br><br>
+
+    <span>Contact </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id=contact></span><br><br>
+
+    <span>Email </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id=email></span><br><br>
+    </div>
+    <div class="footer-container">
+      <p><strong>Doyel Agrawal &nbsp; Namit Atreya &nbsp; Niharika Singh &nbsp; Swastik Singh</strong></p>
+      <p>© ChalDeIndia 2021</p>
+    </div>
+    <!-- <script src="Login.js" charset="utf-8"></script> -->
+    <script type="text/javascript">
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const fname = urlParams.get('a');
+      const mname=urlParams.get('b');
+      const lname=urlParams.get('c');
+      const contact=urlParams.get('d');
+      const email=urlParams.get('e');
+      document.querySelector("#fname").innerHTML=fname;
+      document.querySelector("#mname").innerHTML=mname;
+      document.querySelector("#lname").innerHTML=lname;
+      document.querySelector("#contact").innerHTML=contact;
+      document.querySelector("#email").innerHTML=email;
+    </script>
+  </body>
+</html>
