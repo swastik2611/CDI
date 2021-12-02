@@ -28,7 +28,6 @@ if(mysqli_query($con,$qry))
   else
   {
     $row = mysqli_fetch_array($result);
-
   }
 }
 else {
