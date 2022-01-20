@@ -1,0 +1,55 @@
+.bodyclass{
+  text-align: center;
+  margin: 0 ;
+  background-color: #D8E9A8;
+}
+.h11{
+  font-size: 30px;
+}
+.hbtnd{
+  margin-top: 0;
+  text-align: left;
+}
+.hbtn{
+  font-size:20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.feedbackform{
+  text-align: left;
+  padding: 20px 0 20px 50px;
+  background-color: #E9A6A6;
+}
+.inp{
+  font-size: 15px;
+  padding: 2px 4px;
+}
+.b1{
+  position: relative;
+  margin-left:550px;
+}
+.fform{
+  font-size: 20px;
+}
+.tarea{
+  font-size: 15px;
+}
+.fbtn{
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.sp{
+  color: #161E54;
+}
+.fbtn:hover{
+cursor: pointer;
+}
+.footer-container{
+  height: 90px;
+  margin:auto;
+  padding: 10px 0 10px 0;
+  color: #3E065F;
+  background-color: #88E0EF;
+  font-size: 20px;
+}
